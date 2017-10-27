@@ -1,0 +1,164 @@
+
+html{
+	height:100%;
+}
+
+body{
+	background: url('denison.jpg');
+	background-size: cover;
+	font-family:'Lato', sans-serif;
+	color:white;
+
+}
+
+#content{
+	text-align: center;
+	padding-top: 25%;
+	animation: content 4s;
+}
+
+@keyframes content{
+	from{
+		opacity:0;
+	}
+	to{
+		opacity:1;
+	}
+}
+
+h1{
+	font-weight:700;
+	font-size:5em;
+	text-shadow: 1.5px 1.5px 2px black;
+}
+
+hr{
+	width:600px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom:1px solid rgba(0,0,0,0.4);
+}
+
+.loginbox{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: 450px;
+	padding: 80px 30px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5);
+	border-radius: 10%
+
+}
+
+.user{
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-150px/2);
+	left: calc(50% - 40px);
+}
+h4{
+	text-align: center;
+	margin-top: -20px;
+}
+
+}
+
+.loginbox p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #ffae52;
+	text-align: left;
+}
+
+.logbox{
+	animation: boxlogin 2s;
+}
+
+@keyframes boxlogin{
+	from{
+		opacity: 0;
+
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+.loginbox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.loginbox input[type='text'],
+.loginbox input[type='password']{
+	border:none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline:none;
+	color: #fff;
+	height: 40px;
+	font-size: 16px;
+}
+
+::placeholder{
+	color: rgba(255,255,255,0.5);
+}
+
+.loginbox input[type='submit']{
+	border: none;
+	outline:none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: #ff267e;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.newacc{
+	padding-top: 10px;
+}
+.loginbox input[type='submit']:hover{
+	background:#ffae52;
+	color: #262626;
+	animation: login 0.5s;
+}
+
+@keyframes login{
+	from{
+		background:#ff267e;
+		font-size:16px;
+	}
+	to{
+		background:#ffae52;
+		font-size: 17px;
+	}
+}
+
+.loginbox a {
+	text-decoration: none;
+	color:#fff;
+	font-size: 14px;
+	font-weight:bold;
+	
+
+}
+
+.loginbox a:hover{
+	animation: link 1s;
+}
+
+@keyframes link{
+	from{
+		color:#fff;
+	}
+	to{
+		color:red;
+	}
+}
